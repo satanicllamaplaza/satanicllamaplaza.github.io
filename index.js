@@ -1,7 +1,5 @@
 function showTime() {
     const date = new Date();
-
-    // Set the time zone to Los Angeles
     const options = {
         timeZone: 'America/Los_Angeles',
         weekday: 'long',
@@ -16,9 +14,22 @@ function showTime() {
     const formattedDate = date.toLocaleDateString('en-US', options);
     const formattedTime = date.toLocaleTimeString('en-US', options);
 
-    document.getElementById('date').innerHTML = `${formattedDate}, ${formattedTime}`;
-    setTimeout(showTime, 1000); // Update every second
+    const dateElement = document.getElementById('date');
+    const timeElement = document.getElementById('time');
+
+    if (dateElement) {
+        dateElement.innerHTML = `${formattedDate}`;
+    } else {
+        console.error('Element with id "date" not found.');
+    }
+
+    if (timeElement) {
+        timeElement.innerHTML = `${formattedTime}`;
+    } else {
+        console.error('Element with id "time" not found.');
+    }
+
+    requestAnimationFrame(showTime); // Efficient update
 }
 
 showTime();
-
