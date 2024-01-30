@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Font";
-  src: url("./Dune_Rise.ttf");
+  src: url("./HellghostRough-Regular.ttf");
 }
 
 html {
@@ -12,8 +12,8 @@ html {
 
 body {
   display: flex;
-  color: #171717;
-  background: #000000;
+  color: #26221c;
+  background: #26221c;
   margin-right: 9em;
   padding: 1em;
   font-family: Font;
@@ -38,7 +38,7 @@ nav {
 h1 {
   font-size: 2.2em;
   font-weight: 600;
-  color: #ff00ff;
+  color: #f9bf6b;
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 0;
@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-size: 1.2em;
   font-weight: 600;
-  color: #8c6af4;
+  color: #f9bf6b;
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 2.3em;
@@ -67,7 +67,7 @@ li {
 
 li:first-child {
   display: inline-block;
-  color: #ff002f;
+  color: #f9bf6b;
   font-size: 1.5em;
   font-weight: 600;
   text-align: center;
@@ -76,11 +76,11 @@ li:first-child {
 }
 
 a {
-  color: #00ddff;
+  color: #f9bf6b;
   font-size: 1.1em;
   text-decoration: none;
 }
 
 a:hover {
-  color: #8c6af4;
+  color: #e0490a;
 }
